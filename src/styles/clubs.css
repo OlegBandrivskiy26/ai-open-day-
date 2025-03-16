@@ -1,0 +1,76 @@
+.clubs {
+  width: 100%;
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.clubs-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 38px;
+  margin-right: 62%;
+}
+.clubs-title::first-letter {
+  color: #439589;
+}
+.clubs-container {
+  width: 90%;
+  height: 95%;
+  background-color: #f5fffe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.clubs-content-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.clubs-img-container {
+  width: 50%;
+  height: 100%;
+}
+.clubs-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/students-img1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.clubs-txt-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.clubs-title-txt {
+  font-size: 42px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+.clubs-desc-txt {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 30px;
+  margin-left: 30px;
+  line-height: 45px;
+  text-align: end;
+}
+.clubs-txt-start {
+  align-items: flex-start !important;
+}
+.clubs-desc-start {
+  text-align: start;
+}
+.clubs-title-start {
+  margin-right: 0;
+  margin-left: 30px;
+}

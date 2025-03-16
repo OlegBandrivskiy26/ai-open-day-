@@ -1,0 +1,110 @@
+.sponsors {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponsors__container {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-container {
+  width: 100%;
+  max-width: 1200px; /* Адаптуй під твій дизайн */
+  margin: 0 auto;
+}
+
+.sponsors__img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+.sponsors__img1 {
+  background-image: url(../img/brainstack.png);
+}
+.sponsors__img2 {
+  background-image: url(../img/n-ix.png);
+}
+.sponsors__img3 {
+  background-image: url(../img/pecode.png);
+}
+.sponsors__img4 {
+  width: 330px;
+  background-image: url(../img/dou2.jpg);
+}
+.sponsors__img5 {
+  background-image: url(../img/somatic_logo\ 1.png);
+}
+.sponsors__img6 {
+  background-image: url(../img/Microsoft\ Logo2.webp);
+}
+.sponsors__img7 {
+  background-image: url(../img/it-claster.jpg);
+}
+.sponsors__img8 {
+  background-image: url(../img/extela.jpg);
+}
+.sponsors__img9 {
+  background-image: url(../img/blackthorn.jpg);
+}
+.sponsors__img10 {
+  background-image: url(../img/soft-serve.jpeg);
+}
+.sponsors__img11 {
+  background-image: url(../img/epam.jpeg);
+}
+.sponsors__img12 {
+  background-image: url(../img/hulp.jpeg);
+}
+.sponsors__img13 {
+  background-image: url(../img/original.jpeg.png);
+}
+.sponsors__img14 {
+  background-image: url(../img/help.PNG);
+}
+.slider-container .slick-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+.sponsors {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors__img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsors {
+    height: auto;
+  }
+}

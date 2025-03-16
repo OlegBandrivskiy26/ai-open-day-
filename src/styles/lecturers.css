@@ -1,0 +1,48 @@
+.lecturers {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+}
+.lecturers-title {
+  font-size: 38px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.lecturers-title::first-letter {
+  color: #439589;
+}
+.lecturers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f5fffe;
+}
+.lecturer {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.lecturer-img {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  order: 1;
+}
+.lecturer-img1 {
+  background-image: url(../img/vuklyk.jpg);
+}
+.lecturer-img2 {
+  background-image: url(../img/zasoba.jpg);
+}
+.lecturer-name {
+  order: 2;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+}

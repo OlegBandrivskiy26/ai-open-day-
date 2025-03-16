@@ -1,0 +1,149 @@
+footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f5fffe;
+  margin-top: 100px;
+}
+.footer__container {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.first__grp {
+  height: 65%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.logo__footer {
+  width: 95px;
+  height: 61px;
+  background-image: url(../img/logo.svg);
+  background-size: cover;
+}
+.social__networks__grp {
+  width: 80px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.instagram {
+  background-image: url(../img/instagram.png);
+}
+.Facebook {
+  background-image: url(../img/facebook.png);
+}
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.social__networks {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  cursor: pointer;
+}
+.contact__info {
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.title__contact {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.txt__contact {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.footer__nav__menu {
+  height: 55%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.nav__items__footer {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+}
+.left,
+.nav__items__footer::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: 0.2s;
+}
+.left,
+.nav__items__footer:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .footer__container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .first__grp,
+  .contact__info,
+  .footer__nav__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social__networks__grp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav__items__footer {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .title__contact {
+    margin-bottom: 5px;
+  }
+  .txt__contact {
+    margin-bottom: 5px;
+  }
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .logo__footer {
+    margin-bottom: 15px;
+  }
+}
