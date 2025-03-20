@@ -6,7 +6,8 @@ import "../styles/sponsors.css"
 
 const Sponsors = () => {
     const settings = {
-        dots: true,
+        dots: false, // Вимикаємо крапочки
+        arrows: false, // Вимикаємо стрілочки
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -19,6 +20,8 @@ const Sponsors = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    dots: false,
+                    arrows: false,
                 }
             },
             {
@@ -26,6 +29,8 @@ const Sponsors = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: false,
+                    arrows: false,
                 }
             }
         ]

@@ -1,0 +1,154 @@
+/* .carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 2em;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+.slide-full-1 {
+  background-image: url(../img/first-carusel-img1.jpg);
+}
+.slide-full-2 {
+  background-image: url(../img/first-carusel-img2.jpg);
+}
+.slide-full-3 {
+  background-image: url(../img/first-carusel-img3.jpg);
+}
+.slide-full-4 {
+  background-image: url(../img/first-carusel-img4.jpg);
+}
+.slide-full-5 {
+  background-image: url(../img/first-carusel-img5.jpg);
+}
+.slide-full-6 {
+  background-image: url(../img/first-carusel-img6.jpg);
+}
+.slide-full-7 {
+  background-image: url(../img/first-carusel-img7.jpg);
+} */
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 2em;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-color: red; /* тимчасовий фон, замість фото */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Забезпечення повної висоти для слайдера */
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Розміщення точок слайдера */
+.slick-dots {
+  bottom: 20px;
+}
+
+/* Background images */
+.slide-full-1 {
+  background-image: url(../img/carusel-screen-1.png);
+}
+.slide-full-2 {
+  background-image: url(../img/carusel-screen-2.png);
+}
+.slide-full-3 {
+  background-image: url(../img/carusel-screen-3.png);
+}
+.slide-full-4 {
+  background-image: url(../img/carusel-screen-4.png);
+}
+.slide-full-5 {
+  background-image: url(../img/carusel-screen-5.png);
+}
+.slide-full-6 {
+  background-image: url(../img/carusel-screen-6.png);
+}
+.slide-full-7 {
+  background-image: url(../img/carusel-screen-7.png);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 100vh;
+  }
+  .slide {
+    height: 100vh;
+  }
+  .carousel-title {
+    font-size: 1.5em;
+  }
+  .slick-dots {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-title {
+    font-size: 1.2em;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+}

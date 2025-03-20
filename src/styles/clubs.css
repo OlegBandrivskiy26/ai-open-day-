@@ -6,15 +6,18 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .clubs-title {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 38px;
   margin-right: 62%;
 }
+
 .clubs-title::first-letter {
   color: #439589;
 }
+
 .clubs-container {
   width: 90%;
   height: 95%;
@@ -24,18 +27,21 @@
   justify-content: space-between;
   flex-direction: column;
 }
+
 .clubs-content-container {
-  height: 300px;
+  height: 450px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .clubs-img-container {
   width: 50%;
   height: 100%;
 }
+
 .clubs-img {
   width: 100%;
   height: 100%;
@@ -43,19 +49,24 @@
   background-size: cover;
   background-position: center;
 }
+.clubs-img1 {
+  background-image: url(../img/data-since.jpg);
+}
 .clubs-txt-container {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
   flex-direction: column;
 }
+
 .clubs-title-txt {
   font-size: 42px;
   font-weight: 700;
   margin-right: 30px;
 }
+
 .clubs-desc-txt {
   font-size: 16px;
   font-weight: 400;
@@ -64,13 +75,100 @@
   line-height: 45px;
   text-align: end;
 }
+
 .clubs-txt-start {
   align-items: flex-start !important;
 }
+
 .clubs-desc-start {
   text-align: start;
 }
+
 .clubs-title-start {
   margin-right: 0;
   margin-left: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Adjust the title */
+  .clubs-title {
+    margin-right: 0;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* Stack the content vertically */
+  .clubs-content-container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .clubs-img-container,
+  .clubs-txt-container {
+    width: 100%;
+  }
+
+  .clubs-img-container {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .clubs-txt-container {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .clubs-title-txt {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .clubs-desc-txt {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* Adjust for reversed text alignment when needed */
+  .clubs-txt-start {
+    align-items: center !important;
+  }
+
+  .clubs-desc-start {
+    text-align: center;
+  }
+
+  .clubs-title-start {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clubs-title {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .clubs-content-container {
+    margin-bottom: 20px;
+  }
+
+  .clubs-img-container {
+    height: 150px;
+  }
+
+  .clubs-title-txt {
+    font-size: 24px;
+  }
+
+  .clubs-desc-txt {
+    font-size: 13px;
+    line-height: 1.3;
+  }
 }

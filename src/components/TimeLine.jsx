@@ -1,126 +1,197 @@
 import React, { useState } from 'react';
 import "../styles/timeline.css";
 
+const semesterData = {
+  "1 семестр": {
+    title: "Семестр 1",
+    subjects: [
+      "Алгебра і геометрія",
+      "Дискретна математика",
+      "Іноземна мова за професійним спрямуванням, частина 1",
+      "Історія державності та культури України",
+      "Математичний аналіз",
+      "Основи програмування",
+      "Фізичне виховання, частина 1"
+    ]
+  },
+  "2 семестр": {
+    title: "Семестр 2",
+    subjects: [
+      "Архітектура комп'ютерів та операційні системи",
+      "Іноземна мова за професійним спрямуванням, частина 2",
+      "Об'єктно-орієнтоване проєктування та програмування",
+      "Теорія ймовірності та статистика",
+      "Теорія обчислень, алгоритми і структури даних",
+      "Українська мова за професійним спрямуванням",
+      "Фізичне виховання, частина 2"
+    ]
+  },
+  "3 семестр": {
+    title: "Семестр 3",
+    subjects: [
+      "Іноземна мова за професійним спрямуванням, частина 3",
+      "Організація баз даних та знань",
+      "Програмування на стороні сервера",
+      "Теорія інформації",
+      "Функційне програмування",
+      "Чисельні методи"
+    ]
+  },
+  "4 семестр": {
+    title: "Семестр 4",
+    subjects: [
+      "Бізнес-аналіз у розробці інформаційних систем",
+      "Дослідження операцій",
+      "Захист інформації",
+      "Комп'ютерні мережі та протоколи передачі даних",
+      "Програмування клієнтських систем",
+      "Вибіркові дисципліни циклу загальної підготовки",
+      "Вільний вибір"
+    ]
+  },
+  "5 семестр": {
+    title: "Семестр 5",
+    subjects: [
+      "Інтелектуальний аналіз та візуалізація даних",
+      "Машинне навчання",
+      "Основи штучного інтелекту",
+      "Розробка та проєктування інформаційних систем",
+      "Вибірковий блок Аналіз даних",
+      "Моделювання та аналіз даних у інформаційних системах",
+      "Проєкт з аналізу та візуалізації даних",
+      "Вибірковий блок Розгортання систем машинного навчання",
+      "Основи MLOPs",
+      "Проєкт з розроблення MLOPs",
+      "Вибірковий блок Штучний інтелект в робототехніці",
+      "Основи робототехніки",
+      "Проєкт з створення прикладної роботизованої системи",
+      "Вибірковий блок Прикладне програмне забезпечення",
+      "Проєкт з розгортання інформаційних систем",
+      "Розгортання інформаційних систем"
+    ]
+  },
+  "6 семестр": {
+    title: "Семестр 6",
+    subjects: [
+      "Глибинне навчання та нейронні мережі",
+      "Розподілені системи та паралельні обчислення",
+      "Філософія та етика штучного інтелекту",
+      "Вибірковий блок Аналіз даних",
+      "Аналітичні сховища даних",
+      "Середовище та компоненти розробки у моделюванні і аналізі даних",
+      "Вибірковий блок Прикладне програмне забезпечення",
+      "Бізнес-аналітика у сховищах даних",
+      "Середовище та компоненти розробки кросплатформенних додатків",
+      "Вибірковий блок Розгортання систем машинного навчання",
+      "Середовище та компоненти розробки MLOps рішень",
+      "Системи та сховища даних",
+      "Вибірковий блок Штучний інтелект в робототехніці",
+      "Середовище та компоненти розробки прикладних роботизованих систем",
+      "Теорія керування об'єктами робототехніки"
+    ]
+  },
+  "7 семестр": {
+    title: "Семестр 7",
+    subjects: [
+      "Обробка зображень методами штучного інтелекту",
+      "Обробка мови методами штучного інтелекту",
+      "Проєктно-технологічна практика",
+      "Вибірковий блок Аналіз даних",
+      "Обробка і аналіз великих даних",
+      "Проєкт з створення модуля аналізу даних у інформаційній системі",
+      "Хмарні сервіси для аналізу великих даних",
+      "Вибірковий блок Прикладне програмне забезпечення",
+      "Програмування прикладних кросплатформенних додатків",
+      "Проєкт з створення прикладного програмного забезпечення в інформаційній системі",
+      "Хмарні сервіси для прикладних систем та додатків",
+      "Вибірковий блок Штучний інтелект в робототехніці",
+      "Програмування прикладних роботизованих систем",
+      "Проєкт з удосконалення роботизованої системи",
+      "Промислова робототехніка та інтернет речей",
+      "Вибірковий блок Розгортання систем машинного навчання",
+      "Проєкт створення ML-інфраструктури у інформаційній системі",
+      "Проєктування систем аналізу великих даних",
+      "Хмарні сервіси для роботи з великими даними"
+    ]
+  },
+  "8 семестр": {
+    title: "Семестр 8",
+    subjects: [
+      "Виконання бакалаврської кваліфікаційної роботи",
+      "Захист бакалаврської кваліфікаційної роботи",
+      "Основи охорони праці та безпека життєдіяльності",
+      "Практика за темою бакалаврської кваліфікаційної роботи",
+      "Управління ІТ-проєктами",
+      "Вибірковий блок Аналіз даних",
+      "Архітектурні методики та архітектура даних у інформаційних системах",
+      "Проєкт з удосконалення аналізу даних у інформаційній системі",
+      "Вибірковий блок Прикладне програмне забезпечення",
+      "Архітектурні методики та архітектура програмних додатків у інформаційних системах",
+      "Проєкт з удосконалення прикладного програмного забезпечення в інформаційній системі",
+      "Вибірковий блок Розгортання систем машинного навчання",
+      "Архітектурні методики та операційна інфраструктура в інформаційних системах",
+      "Проєкт з удосконалення ML-інфраструктури у інформаційній системі",
+      "Вибірковий блок Штучний інтелект в робототехніці",
+      "Машинне навчання та інтеграційні рішення в робототехніці",
+      "Проєкт із застосування машинного навчання в роботизованій системі"
+    ]
+  }
+};
+
 const TimeLine = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [selectedSemester, setSelectedSemester] = useState(null);
 
-  const openSidebar = () => {
+  const openSidebar = (semesterKey) => {
+    setSelectedSemester(semesterData[semesterKey]);
     setSidebarOpen(true);
   };
 
   const closeSidebar = () => {
     setSidebarOpen(false);
+    setSelectedSemester(null);
   };
 
   return (
     <section className="timeline">
-      <h1 className="timeline-title">Розклад</h1>
-      <div className="timeline-container">
-        <div className="timeline-point-container">
-          <h1 className="title-point">Семестр 1</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-          <hr className="hr-vertical" />
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container timeline-point-container-bottom">
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-          <hr className="hr-vertical" />
-          <h1 className="title-point">Семестр 2</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container">
-          <h1 className="title-point">Семестр 3</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-          <hr className="hr-vertical" />
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container timeline-point-container-bottom">
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-          <hr className="hr-vertical" />
-          <h1 className="title-point">Семестр 4</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container">
-          <h1 className="title-point">Семестр 5</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-          <hr className="hr-vertical" />
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container timeline-point-container-bottom">
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-          <hr className="hr-vertical" />
-          <h1 className="title-point">Семестр 6</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container">
-          <h1 className="title-point">Семестр 7</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-          <hr className="hr-vertical" />
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-        </div>
-        <hr className="hr-horizontal" />
-        <div className="timeline-point-container timeline-point-container-bottom">
-          <div className="point-empty" onClick={openSidebar}>
-            <div className="circle"></div>
-          </div>
-          <hr className="hr-vertical" />
-          <h1 className="title-point">Семестр 8</h1>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, doloremque?
-          </p>
-        </div>
-      </div>
+    <h1 className="timeline-title">Розклад</h1>
 
-      {/* Бокова панель та оверлей */}
-      {sidebarOpen && (
-        <>
-          <div className="sidebar-overlay active" onClick={closeSidebar}></div>
-          <div className="sidebar-panel active">
-            <button className="sidebar-close" onClick={closeSidebar}>Закрити</button>
-            <h2 className="sidebar-header">Заголовок панелі</h2>
-            <div className="sidebar-content">
-              <p>
-                Тут може бути додаткова інформація або деталі семестру. Ви можете змінити цей текст за потреби.
-              </p>
-            </div>
+    {/* Контейнер для лінії і кружечків */}
+    <div className="timeline-wrapper">
+      {/* Товста лінія (timeline) */}
+      <div className="timeline-line"></div>
+
+      {/* Всі кружечки з назвами семестрів */}
+      <div className="timeline-items">
+        {Object.entries(semesterData).map(([key, value]) => (
+          <div className="circle-container" key={key}>
+            <div className="title-point">{value.title}</div>
+            <div className="circle" onClick={() => openSidebar(key)} />
           </div>
-        </>
-      )}
-    </section>
+        ))}
+      </div>
+    </div>
+
+    {/* Бічна панель (sidebar) */}
+    {sidebarOpen && selectedSemester && (
+      <>
+        <div className="sidebar-overlay active" onClick={closeSidebar}></div>
+        <div className="sidebar-panel active">
+          <button className="sidebar-close" onClick={closeSidebar}>
+            Закрити
+          </button>
+          <h2 className="sidebar-header">{selectedSemester.title}</h2>
+          <div className="sidebar-content">
+            <ul>
+              {selectedSemester.subjects.map((subject, index) => (
+                <li key={index}>{subject}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </>
+    )}
+  </section>
   );
 };
 

@@ -1,94 +1,94 @@
+/* Базова стилізація секції */
 .timeline {
   width: 100%;
-  height: 65vh;
+  min-height: 60vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
   margin-top: 50px;
-}
-
-.timeline-container {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5fffe;
+  position: relative;
+  padding-bottom: 40px; /* додатковий відступ знизу */
 }
 
 .timeline-title {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 79%;
   font-size: 38px;
+  margin-left: 10%;
+  margin-bottom: 30px;
 }
-
 .timeline-title::first-letter {
   color: #439589;
 }
 
-.timeline-point-container {
-  width: 25%;
+/* Обгортка для лінії і кружечків */
+.timeline-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  height: 120px; /* Залежить від того, скільки місця треба під текст і коло */
+}
+
+/* Товста лінія по центру контейнера */
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 8px; /* Товщина лінії */
+  background-color: #333; /* Колір лінії */
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+
+/* Контейнер для всіх кружечків (розподілені по ширині) */
+.timeline-items {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start; /* Вирівнюємо елементи зверху */
+  position: relative;
+  z-index: 1; /* Щоб було вище за лінію */
+}
+
+/* Кожен семестр: текст + коло */
+.circle-container {
+  display: flex;
   flex-direction: column;
-  margin-bottom: 220px;
-}
-
-.timeline-point-container-bottom {
-  margin-top: 220px !important;
-  margin-bottom: 0 !important;
-}
-
-.hr-vertical {
-  height: 50px;
-  width: 5px;
-  background-color: #000;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.point-empty {
-  width: 30px;
-  height: 30px;
-  border: 2px solid #439589;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  width: auto;
+}
+
+/* Текст над колом */
+.title-point {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+  width: max-content;
+}
+
+/* Сам кружечок */
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #439589;
+  border-radius: 50%;
+  border: 2px solid #fff; /* обвід, за бажанням */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
-.circle {
-  width: 15px;
-  height: 15px;
-  background-color: #439589;
-  border-radius: 50%;
+/* Ефект при наведенні */
+.circle:hover {
+  transform: translateY(-50%) scale(1.1);
 }
 
-.hr-horizontal {
-  width: 250px;
-  height: 5px;
-  background-color: #000;
-  border-radius: 5px;
-  border: none;
-}
-
-.title-point {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.desc {
-  font-size: 12px;
-  font-weight: 400;
-}
-
+/* ------------------- */
+/* Стилі бічної панелі */
+/* ------------------- */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -98,6 +98,9 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: none;
+}
+.sidebar-overlay.active {
+  display: block;
 }
 
 .sidebar-panel {
@@ -114,13 +117,20 @@
   padding: 20px;
   overflow-y: auto;
 }
-
-.sidebar-overlay.active {
-  display: block;
-}
-
 .sidebar-panel.active {
   transform: translateX(0);
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #439589;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .sidebar-header {
@@ -134,14 +144,53 @@
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.sidebar-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #439589;
-  border: none;
-  color: #fff;
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-content li {
   padding: 8px 12px;
-  cursor: pointer;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.sidebar-content li:hover {
+  background-color: #e0e0e0;
+}
+
+/* ------------------- */
+/* Адаптивні стилі     */
+/* ------------------- */
+@media screen and (max-width: 768px) {
+  .timeline-title {
+    font-size: 30px;
+    margin-left: 5%;
+  }
+  .timeline-wrapper {
+    width: 90%;
+    height: 100px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeline-title {
+    font-size: 24px;
+  }
+  .sidebar-panel {
+    width: 70%;
+  }
+  .sidebar-header {
+    font-size: 20px;
+  }
+  .sidebar-content {
+    font-size: 14px;
+  }
 }

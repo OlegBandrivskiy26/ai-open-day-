@@ -19,10 +19,9 @@ const Footer = () => {
                 <h5 className='txt__contact'>ai.dept@lpnu.ua</h5>
             </div>
             <div className="footer__nav__menu">
-                <Link className='nav__items__footer' to="about" smooth={true} offset={-100} duration={500}>Про подію</Link>
-                <Link className='nav__items__footer' to="speakers" smooth={true} offset={-100} duration={500}>Спікери</Link>
-                <Link className='nav__items__footer' to="program" smooth={true} offset={-100} duration={500}>Програма</Link>
-                <Link className='nav__items__footer' to="sponsors" smooth={true} offset={-100} duration={500}>Спонсори</Link>
+                <Link className="nav__items__footer" to="about" smooth={true} offset={-70} duration={500}>Про нас</Link>
+                <Link className="nav__items__footer" to="lecturers" smooth={true} offset={-20} duration={500}>Наші викладачі</Link>
+                <Link className="nav__items__footer" to="sponsors" smooth={true} offset={-100} duration={500}>Партнери</Link>
             </div>
         </div>
     </footer>

@@ -1,4 +1,4 @@
-.sponsors {
+/* .sponsors {
   width: 100%;
   height: 50vh;
   display: flex;
@@ -14,7 +14,7 @@
 }
 .slider-container {
   width: 100%;
-  max-width: 1200px; /* Адаптуй під твій дизайн */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -106,5 +106,127 @@
 @media screen and (max-width: 768px) {
   .sponsors {
     height: auto;
+  }
+} */
+
+/* Base Styles */
+.sponsors {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: auto;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors__img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sponsor Images */
+.sponsors__img1 {
+  background-image: url(../img/brainstack.png);
+}
+.sponsors__img2 {
+  background-image: url(../img/n-ix.png);
+}
+.sponsors__img3 {
+  background-image: url(../img/pecode.png);
+}
+.sponsors__img4 {
+  width: 330px; /* This image is wider, so we keep it a bit larger */
+  height: 250px;
+  background-image: url(../img/dou2.jpg);
+}
+.sponsors__img5 {
+  background-image: url(../img/somatic_logo\ 1.png);
+}
+.sponsors__img6 {
+  background-image: url(../img/Microsoft\ Logo2.webp);
+}
+.sponsors__img7 {
+  background-image: url(../img/it-claster.jpg);
+}
+.sponsors__img8 {
+  background-image: url(../img/extela.jpg);
+}
+.sponsors__img9 {
+  background-image: url(../img/blackthorn.jpg);
+}
+.sponsors__img10 {
+  background-image: url(../img/soft-serve.jpeg);
+}
+.sponsors__img11 {
+  background-image: url(../img/epam.jpeg);
+}
+.sponsors__img12 {
+  background-image: url(../img/hulp.jpeg);
+}
+.sponsors__img13 {
+  background-image: url(../img/original.jpeg.png);
+}
+.sponsors__img14 {
+  background-image: url(../img/help.PNG);
+}
+
+/* Responsive Styles for Tablets */
+@media screen and (max-width: 768px) {
+  .sponsors {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .slider-container {
+    width: 90%;
+  }
+
+  .sponsors__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Adjust the wider image for tablets */
+  .sponsors__img4 {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 480px) {
+  .sponsors {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .slider-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .sponsors__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sponsors__img4 {
+    width: 180px;
+    height: 150px;
   }
 }
