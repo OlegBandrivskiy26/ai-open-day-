@@ -8,8 +8,8 @@
   padding: 20px;
   box-sizing: border-box;
   margin-top: 100px;
+  position: relative; /* Для коректного відображення скролу */
 }
-
 .about__inner {
   width: 90%;
   max-width: 800px;
@@ -26,7 +26,23 @@
 .title__about::first-letter {
   color: #439589;
 }
+.about::-webkit-scrollbar {
+  width: 8px; /* Ширина скролбара */
+}
 
+.about::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Колір ползунка */
+  border-radius: 4px;
+}
+
+.about::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5); /* Колір при наведенні */
+}
+
+.about::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Колір фону треку */
+  border-radius: 4px;
+}
 .p__about {
   font-size: 18px;
   line-height: 1.8;
