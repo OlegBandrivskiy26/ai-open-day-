@@ -86,6 +86,7 @@
   width: 250px;
   height: 250px;
   background-position: center;
+  object-fit: fit;
   background-size: cover;
   border-radius: 10px;
   order: 1;
@@ -95,7 +96,7 @@
   font-weight: 500;
 }
 .lecturer-img1 {
-  background-image: url(../img/vuklyk.jpg);
+  background-image: url(../img/zavgorodniy.webp);
 }
 
 .lecturer-img2 {
@@ -121,6 +122,15 @@
 }
 .lecturer-img9 {
   background-image: url(../img/yacushun.PNG);
+}
+.lecturer-img10 {
+  background-image: url(../img/Знімок\ екрана\ 2025-03-21\ о\ 16.28.11.png);
+}
+.lecturer-img11 {
+  background-image: url(../img/martynov.jpg);
+}
+.lecturer-img12 {
+  background-image: url(../img/mylkhailushn.jpg);
 }
 .lecturer-name {
   order: 2;

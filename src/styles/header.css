@@ -45,7 +45,7 @@ header {
   white-space: nowrap;
 }
 
-.nav-items::before {
+/* .nav-items::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -58,7 +58,7 @@ header {
 
 .nav-items:hover::before {
   width: 100%;
-}
+} */
 
 /* Burger Menu Styles */
 .burger-menu {

@@ -9,7 +9,7 @@ const Sponsors = () => {
         dots: false, // Вимикаємо крапочки
         arrows: false, // Вимикаємо стрілочки
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplay: true,            
