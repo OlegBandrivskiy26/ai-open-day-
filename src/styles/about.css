@@ -1,19 +1,21 @@
 .about {
   width: 100%;
-  height: 80vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow-y: auto;
+  /* Встановлюємо висоту за потребою, або auto, щоб не виникало скролювання */
+  height: auto;
   padding: 20px;
   box-sizing: border-box;
   margin-top: 100px;
-  position: relative; /* Для коректного відображення скролу */
+  /* Видаляємо overflow, щоб не було додаткового скролу */
 }
+
 .about__inner {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
+  margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Простір між блоками */
 }
 
 .title__about {
@@ -26,35 +28,23 @@
 .title__about::first-letter {
   color: #439589;
 }
-.about::-webkit-scrollbar {
-  width: 8px; /* Ширина скролбара */
+
+.block {
+  /* Стилізація блоку за потребою */
 }
 
-.about::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3); /* Колір ползунка */
-  border-radius: 4px;
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2f2e33;
 }
 
-.about::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.5); /* Колір при наведенні */
-}
-
-.about::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1); /* Колір фону треку */
-  border-radius: 4px;
-}
 .p__about {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
-  color: #2f2e33;
-}
-
-.list__title {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 20px 0 10px;
   color: #2f2e33;
 }
 
@@ -84,5 +74,9 @@ li {
   }
   .about__inner {
     width: 95%;
+  }
+  .p__about {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
