@@ -13,7 +13,18 @@ const About = () => {
           Обираючи нашу програму, ви отримуєте унікальну можливість стати справжнім майстром сучасних технологій штучного інтелекту! Наша програма не просто дає теоретичні знання, а й готує вас до розробки та впровадження інноваційних AI-рішень у різних сферах. Ви зануритеся в захоплюючий світ машинного навчання, нейронних мереж, обробки природної мови, комп’ютерного зору та аналізу великих даних – все це відкриє перед вами двері до кар’єри в найперспективніших технологічних галузях.
           </p>
         </div>
+        <div className="btn-map__wrapper">
+              <a 
+                href="https://aidept.com.ua/course-cards" 
+                className="btn-map" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <span>Карта навчальних курсів</span>
+              </a>
+            </div>
         <div className="block">
+
           <h2 className="subtitle">Ви здобудете:</h2>
           <ul>
 
@@ -59,17 +70,6 @@ const About = () => {
               <li>Менеджер продуктів на базі ШІ (AI Product Manager)</li>
               <li>Фахівець з етики та дотримання вимог у сфері ШІ (AI Ethics & Compliance Specialist)</li>
             </ul>
-            <div className="btn-map__wrapper">
-              <a 
-                href="https://aidept.com.ua/course-cards" 
-                className="btn-map" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <span>Карта навчальних курсів</span>
-              </a>
-            </div>
-
         </div>
 
       </div>

@@ -185,7 +185,9 @@
 .sponsors__img14 {
   background-image: url(../img/help.PNG);
 }
-
+.sponsors__img15 {
+  background-image: url(../img/it-jimpng.png);
+}
 /* Responsive Styles for Tablets */
 @media screen and (max-width: 768px) {
   .sponsors {

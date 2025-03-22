@@ -15,7 +15,7 @@ const Lecturers = () => {
             <div className="lecturer-img lecturer-img10"></div>
         </div>
         <div className="lecturer">
-            <h3 className="lecturer-name">Іван Загородній <br /> <span>Principal Software Engineer в SoftServe</span></h3>
+            <h3 className="lecturer-name">Іван Загородній <br /> <span>Куратор освітньої програми Artificial Intelligence у Lviv IT Cluster. Керівник Software Development Office у SoftServe</span></h3>
             <h5 className='lecturer-subtitle'></h5>
             <div className="lecturer-img lecturer-img1"></div>
         </div>

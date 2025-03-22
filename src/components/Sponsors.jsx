@@ -53,7 +53,8 @@ const Sponsors = () => {
                     <div><div className='sponsors__img sponsors__img11'></div></div>
                     <div><div className='sponsors__img sponsors__img12'></div></div>
                     <div><div className='sponsors__img sponsors__img13'></div></div>
-                    <div><div className='sponsors__img sponsors__img14'></div></div>
+                    <div><div className='sponsors__img sponsors__img14'></div></div>                   
+                    <div><div className='sponsors__img sponsors__img15'></div></div>
                 </Slider>
             </div>
         </div>
