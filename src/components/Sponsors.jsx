@@ -6,8 +6,8 @@ import "../styles/sponsors.css"
 
 const Sponsors = () => {
     const settings = {
-        dots: false, // Вимикаємо крапочки
-        arrows: false, // Вимикаємо стрілочки
+        dots: false, 
+        arrows: false, 
         infinite: true,
         speed: 1000,
         slidesToShow: 3,

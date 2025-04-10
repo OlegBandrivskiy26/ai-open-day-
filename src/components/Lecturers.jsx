@@ -57,6 +57,11 @@ const Lecturers = () => {
             Владислав Михайлишин <br /> <span>R&D Manager in ChargeAfter</span></h3>
             <div className="lecturer-img lecturer-img12"></div>
         </div>
+        <div className="lecturer">
+            <h3 className="lecturer-name">
+            Віталій Яковина <br /> <span>Гаран освітньої програми, професор, д.т.н.</span></h3>
+            <div className="lecturer-img lecturer-img13"></div>
+        </div>
       </div>
     </section>
   )

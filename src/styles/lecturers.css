@@ -96,7 +96,7 @@
   font-weight: 500;
 }
 .lecturer-img1 {
-  background-image: url(../img/zavgorodniy.webp);
+  background-image: url(../img/zavgorodniy.jpg);
 }
 
 .lecturer-img2 {
@@ -131,6 +131,10 @@
 }
 .lecturer-img12 {
   background-image: url(../img/mylkhailushn.jpg);
+}
+.lecturer-img13 {
+  background-image: url(../img/Yakovyna.jpg);
+  background-position: unset;
 }
 .lecturer-name {
   order: 2;
