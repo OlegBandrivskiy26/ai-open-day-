@@ -15,13 +15,13 @@
 }
 
 .clubs-title::first-letter {
-  color: #439589;
+  color: #8175c0;
 }
 
 .clubs-container {
   width: 90%;
   height: 95%;
-  background-color: #f5fffe;
+  background-color: #15202a;
   display: flex;
   align-items: center;
   justify-content: space-between;

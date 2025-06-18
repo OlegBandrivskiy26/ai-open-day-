@@ -16,7 +16,7 @@
   margin-bottom: 30px;
 }
 .timeline-title::first-letter {
-  color: #439589;
+  color: #8175c0;
 }
 
 /* Обгортка для лінії і кружечків */
@@ -125,7 +125,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #439589;
+  background: #8175c0;
   border: none;
   color: #fff;
   padding: 8px 12px;

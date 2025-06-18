@@ -1,0 +1,80 @@
+.leader-testimonial {
+  width: 100vw;
+  padding: 80px 5vw;
+  box-sizing: border-box;
+  color: white;
+}
+
+.gradient-purple {
+  background: linear-gradient(135deg, #181c2f, #3b2a6d);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, #ff6b00, #3b2a6d);
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.leader-image {
+  width: 260px;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.melnykova {
+  background-image: url("../img/Знімок екрана 2025-03-21 о 16.28.11.png");
+}
+
+.shakhovska {
+  background-image: url("../img/shahovska.JPG");
+}
+
+.leader-content {
+  max-width: 800px;
+}
+
+.leader-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leader-position {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.leader-quote {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  .testimonial-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leader-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .leader-quote {
+    font-size: 18px;
+  }
+}

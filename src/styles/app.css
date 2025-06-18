@@ -10,10 +10,12 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  background-color: #15202a;
+  color: #fff !important;
 }
 .welcome {
   width: 100%;

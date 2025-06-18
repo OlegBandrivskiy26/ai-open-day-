@@ -1,133 +1,92 @@
-.about {
-  width: 100%;
-  /* Встановлюємо висоту за потребою, або auto, щоб не виникало скролювання */
-  height: auto;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: 100px;
-  /* Видаляємо overflow, щоб не було додаткового скролу */
+.gradient-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #7f5af0, #00ffcb);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(127, 90, 240, 0.4);
+  transition: all 0.3s ease;
 }
 
-.about__inner {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  box-sizing: border-box;
+.gradient-button:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 203, 0.6);
+  transform: scale(1.05);
+}
+.btn-map__wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 30px; /* Простір між блоками */
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #0e1621;
+  box-sizing: border-box;
 }
 
 .title__about {
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 0;
-  color: #2f2e33;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
 }
 .title__about::first-letter {
-  color: #439589;
+  color: #8175c0;
 }
 
-.subtitle {
-  font-size: 28px;
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-card {
+  background: #1e2b39;
+  border-radius: 20px;
+  padding: 30px;
+  color: #ecf0f3;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 24px;
   font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d8d8d8;
+}
+
+.custom-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d8d8d8;
+}
+
+.custom-list li {
   margin-bottom: 10px;
-  color: #2f2e33;
 }
 
-.p__about {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-align: justify;
-  color: #2f2e33;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 30px;
-  margin-bottom: 20px;
-  color: #2f2e33;
-  margin-top: 10px;
-}
-.block {
-  padding: 20px;
-}
-li {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 5px;
-  padding: 5px;
-  border: 1px solid #70b2ac;
-  border-radius: 10px;
-}
-.btn-map {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: transparent;
-  font-size: 16px;
-  font-weight: 700;
-  border: 2px solid #439589;
-  color: #439589;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-map::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #439589;
-  transition: left 0.3s ease;
-  z-index: 0;
-}
-
-.btn-map:hover::before {
-  left: 0;
-}
-
-.btn-map:hover {
-  color: #fff;
-}
-
-.btn-map span {
-  position: relative;
-  z-index: 1;
-}
+/* Кнопка (залишається як є) */
 .btn-map__wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 425px) {
-  .title__about {
-    font-size: 32px;
-  }
-  .p__about {
-    font-size: 16px;
-  }
-  li {
-    font-size: 14px;
-  }
-  .about__inner {
-    width: 95%;
-  }
-  .p__about {
-    font-size: 14px;
-    line-height: 1.6;
-  }
 }

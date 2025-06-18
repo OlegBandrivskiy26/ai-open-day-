@@ -4,7 +4,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #f5fffe;
+  background-color: #15202a;
   margin-top: 100px;
 }
 .footer__container {
@@ -22,9 +22,9 @@ footer {
   flex-direction: column;
 }
 .logo__footer {
-  width: 95px;
+  width: 57px;
   height: 61px;
-  background-image: url(../img/logo.svg);
+  background-image: url(../img/ai-logo.svg);
   background-size: cover;
 }
 .social__networks__grp {
@@ -35,15 +35,15 @@ footer {
   justify-content: space-between;
 }
 .instagram {
-  background-image: url(../img/instagram.png);
+  background-image: url(../img/Instagram-Icon.png);
 }
 .Facebook {
-  background-image: url(../img/facebook.png);
+  background-image: url(../img/Facebook-Circular-Logo.png);
 }
 .copyright {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #ecf0f3;
 }
 .social__networks {
   width: 32px;
@@ -60,13 +60,13 @@ footer {
 }
 .title__contact {
   font-size: 16px;
-  color: #000;
+  color: #ecf0f3;
   font-weight: 500;
 }
 .txt__contact {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #ecf0f3;
 }
 .footer__nav__menu {
   height: 55%;
@@ -78,7 +78,7 @@ footer {
 .nav__items__footer {
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: #ecf0f3;
   cursor: pointer;
   position: relative;
 }
@@ -90,7 +90,7 @@ footer {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #000;
+  background-color: #ecf0f3;
   transition: 0.2s;
 }
 .left,

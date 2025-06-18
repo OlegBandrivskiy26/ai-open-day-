@@ -63,14 +63,14 @@
 }
 
 .lecturers-title::first-letter {
-  color: #439589;
+  color: #8175c0;
 }
 
 .lecturers-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #f5fffe;
+  background-color: #15202a;
 }
 
 .lecturer {
@@ -182,10 +182,62 @@
 
   .lecturer-img {
     width: 150px;
-    height: 150px;
+    height: 240px;
   }
 
   .lecturer-name {
     font-size: 1rem;
   }
+}
+.lecturers {
+  padding: 50px 5%;
+  background-color: #15202a;
+}
+
+.lecturers-title {
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.lecturer-slide {
+  padding: 10px;
+}
+
+.lecturer {
+  background-color: #1e2b39;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lecturer-img {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.lecturer-img:hover {
+  transform: scale(1.03);
+}
+
+.lecturer-name {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.lecturer-name span {
+  font-size: 0.95rem;
+  color: #aaa;
 }
