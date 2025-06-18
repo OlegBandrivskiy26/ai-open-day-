@@ -35,7 +35,7 @@ const Sponsors = () => {
             }
         ]
     };
-  
+
     return (
         <div className="sponsors" id='sponsors'>
             <div className="slider-container">
@@ -56,6 +56,17 @@ const Sponsors = () => {
                     <div><div className='sponsors__img sponsors__img14'></div></div>                   
                     <div><div className='sponsors__img sponsors__img15'></div></div>
                 </Slider>
+            </div>
+
+            <div className="sponsors-btn-wrapper">
+                <a 
+                    href="https://vstup.osvita.ua/y2024/r14/97/1321234/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="gradient-button"
+                >
+                    Подати заявку
+                </a>
             </div>
         </div>
     )

@@ -144,3 +144,24 @@ header {
     margin-right: 10px;
   }
 }
+/* Wrapper for desktop button */
+.apply-btn-wrapper {
+  margin-left: auto;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* Header-specific button style */
+.header-btn {
+  padding: 10px 5px;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+/* Приховати кнопку на мобільних */
+@media screen and (max-width: 768px) {
+  .apply-btn-wrapper {
+    display: none;
+  }
+}
