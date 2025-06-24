@@ -1,52 +1,3 @@
-/* .lecturers {
-  width: 90%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
-}
-.lecturers-title {
-  font-size: 38px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-.lecturers-title::first-letter {
-  color: #439589;
-}
-.lecturers-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #f5fffe;
-}
-.lecturer {
-  width: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.lecturer-img {
-  width: 250px;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  order: 1;
-}
-.lecturer-img1 {
-  background-image: url(../img/vuklyk.jpg);
-}
-.lecturer-img2 {
-  background-image: url(../img/zasoba.jpg);
-}
-.lecturer-name {
-  order: 2;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 1.4rem;
-} */
-
 .lecturers {
   width: 90%;
   height: auto;
@@ -86,7 +37,6 @@
   width: 250px;
   height: 250px;
   background-position: center;
-  object-fit: fit;
   background-size: cover;
   border-radius: 10px;
   order: 1;
@@ -119,6 +69,7 @@
 }
 .lecturer-img8 {
   background-image: url(../img/suvokon.jpg);
+  background-position: center 10%;
 }
 .lecturer-img9 {
   background-image: url(../img/yacushun.PNG);
@@ -134,7 +85,6 @@
 }
 .lecturer-img13 {
   background-image: url(../img/Yakovyna.jpg);
-  background-position: unset;
 }
 .lecturer-name {
   order: 2;
@@ -218,7 +168,7 @@
 
 .lecturer-img {
   width: 100%;
-  height: 280px;
+  height: 300px;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -226,7 +176,16 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
+.lecturer-img12 {
+  background-position: center 25%;
+}
 
+.lecturer-img13 {
+  background-position: center 30%;
+}
+.lecturer-img10 {
+  background-position: center 35%;
+}
 .lecturer-img:hover {
   transform: scale(1.03);
 }
@@ -240,4 +199,14 @@
 .lecturer-name span {
   font-size: 0.95rem;
   color: #aaa;
+}
+@media screen and (max-width: 768px) {
+  .lecturer-img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .lecturer-img {
+    height: 220px;
+  }
 }

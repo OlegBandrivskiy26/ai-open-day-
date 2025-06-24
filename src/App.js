@@ -1,5 +1,7 @@
 import About from "./components/About";
+import CareerOpportunities from "./components/CareerOpportunities";
 import Clubs from "./components/Clubs";
+import EducationProgram from "./components/EducationProgram";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ImagesCarusel from "./components/ImagesCarusel";
@@ -17,15 +19,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <EducationProgram/>
       {/* <FullscreenCarousel/> */}
       <About/>
-      {/* <ImagesCarusel/> */}
-      {/* <TimeLine/> */}
-      {/* <Clubs/> */}
-
-      <Lecturers/>
-      <StudentTestimonial/>
-      <Initiatives/>
       <LeaderTestimonial
         name="Наталія Мельникова"
         position="Завідувачка кафедри СШІ"
@@ -40,6 +36,15 @@ function App() {
         gradientClass="gradient-purple"
         text="Штучний інтелект – це тренд, який за прогнозами світових аналітичних компаній до 2050 року стане звичним явищем у повсякденному житті. Наші випускники отримують ґрунтовні знання, які вміють застосувати на практиці."
       />
+      <Initiatives/>
+      {/* <ImagesCarusel/> */}
+      {/* <TimeLine/> */}
+      {/* <Clubs/> */}
+
+      <Lecturers/>
+      <StudentTestimonial/>
+      <CareerOpportunities/>
+
       <Sponsors/>
       <Footer/>
     </div>

@@ -17,7 +17,7 @@ const lecturers = [
   { name: 'Яцишин Володимир', title: 'CEO, GeeksCode', imgClass: 'lecturer-img9' },
   { name: 'Мартьянов Дмитро', title: 'COO, Pecode OU', imgClass: 'lecturer-img11' },
   { name: 'Владислав Михайлишин', title: 'R&D Manager, ChargeAfter', imgClass: 'lecturer-img12' },
-  { name: 'Віталій Яковина', title: 'Професор, д.т.н.', imgClass: 'lecturer-img13' },
+  { name: 'Віталій Яковина', title: 'Гарант освітньої програми, Професор, д.т.н.', imgClass: 'lecturer-img13' },
 ];
 
 const Lecturers = () => {
@@ -29,7 +29,7 @@ const Lecturers = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
