@@ -37,3 +37,51 @@ body {
   background-image: url(../img/welcome-page.jpg);
   background-size: cover;
 }
+
+.leader-testimonial {
+  width: 100vw;
+  padding: 80px 5vw;
+  box-sizing: border-box;
+  color: white;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;   /* для IE і Edge */
+  scrollbar-width: none;      /* для Firefox */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+  display: none;              /* для Chrome, Safari, Opera */
+}
+.testimonial-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-inner {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.leader-testimonial {
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+

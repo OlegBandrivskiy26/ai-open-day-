@@ -44,6 +44,23 @@ header {
   text-decoration: none;
   white-space: nowrap;
 }
+.toggle-view-btn {
+  background: none;
+  border: none;
+  color: #ecf0f3;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.toggle-view-btn:hover {
+  color: #7f5af0;
+}
+
 
 /* .nav-items::before {
   content: "";
@@ -150,6 +167,7 @@ header {
   margin-right: 30px;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 /* Header-specific button style */

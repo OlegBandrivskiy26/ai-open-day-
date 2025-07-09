@@ -59,14 +59,22 @@ const Sponsors = () => {
             </div>
 
             <div className="sponsors-btn-wrapper">
-                <a 
-                    href="https://vstup.osvita.ua/y2024/r14/97/1321234/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="gradient-button"
-                >
-                    Подати заявку
-                </a>
+                 <a 
+          href="https://vstup.osvita.ua/y2024/r14/97/1321234/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="gradient-button header-btn"
+        >
+          Подати заяву Бакалаврам
+        </a>
+        <a 
+          href="https://vstup.osvita.ua/y2024/r14/97/1340189/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="gradient-button header-btn"
+        >
+          Подати заявку Магістрам
+        </a>
             </div>
         </div>
     )
