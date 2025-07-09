@@ -3,6 +3,8 @@
   background-color: #0e1621;
   color: #ecf0f3;
   box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .initiatives-title {
@@ -17,9 +19,13 @@
 
 .initiatives-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+  grid-template-rows: repeat(2, auto);   /* 2 рядки */
   gap: 30px;
+  max-width: 1400px; /* або будь-який розумний max-width */
+  margin: 0 auto;
 }
+
 
 .initiative-card {
   background-color: #1e2b39;
@@ -63,9 +69,27 @@
   margin-top: 50px;
   font-size: 18px;
   line-height: 1.8;
-  max-width: 100%;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4f3891, #3b2a6d);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .initiatives-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(4, auto);   /* 4 рядки */
+  }
+}
+
+@media (max-width: 600px) {
+  .initiatives-grid {
+    grid-template-columns: 1fr; /* 1 колонка */
+    grid-template-rows: auto;   /* стільки, скільки треба */
+  }
 }
