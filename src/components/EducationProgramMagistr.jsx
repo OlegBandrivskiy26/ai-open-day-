@@ -50,11 +50,11 @@ const EducationProgram = () => {
             Спеціальність: F3 Комп’ютерні науки.
           </p>
           <p className="education-subtitle">
-            Освітня програма: Бакалавр Комп’ютерні науки (Системи штучного інтелекту).
+            Освітня програма: Магістр Комп’ютерні науки (Системи штучного інтелекту).
           </p>
         </div>
         <div className="education-license">
-          <p className="license-number">120</p>
+          <p className="license-number">223</p>
           <p className="license-label">Ліцензійний обсяг місць</p>
         </div>
       </div>

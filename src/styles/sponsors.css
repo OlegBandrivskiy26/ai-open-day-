@@ -263,5 +263,8 @@
 @media screen and (max-width: 480px) {
   .sponsors-btn-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center; /* або center, залежно від потреб */
+    gap: 27px; /* відступ між вертикальними елементами */
   }
 }
