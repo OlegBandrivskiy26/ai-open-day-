@@ -1,8 +1,10 @@
+/* Загальна секція */
 .students-section {
   background-color: #0e1621;
   padding: 80px 40px;
   color: #ecf0f3;
   width: 100vw;
+  overflow: hidden;
 }
 
 .students-title {
@@ -14,24 +16,22 @@
   color: #00ffcb;
 }
 
-.students-container {
+/* Один блок відгуку */
+.slide-content {
   display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-}
-
-.student-block {
-  display: flex;
-  align-items: stretch;
+  align-items: flex-start;
+  justify-content: center;
   gap: 40px;
   max-width: 1100px;
-  width: 100%;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 30px;
+  flex-wrap: nowrap;
 }
 
+
+/* Фото */
 .student-img {
-  width: 250px;
+  width: 280px;
   height: auto;
   object-fit: cover;
   border-radius: 20px;
@@ -39,6 +39,7 @@
   box-shadow: 0 0 0 4px #00ffcb;
 }
 
+/* Текстова частина */
 .student-info {
   flex: 1;
   background-color: #1c2a37;
@@ -66,19 +67,68 @@
   line-height: 1.7;
 }
 
-/* Responsive */
+/* Кнопки-каруселі */
+.arrow-btn {
+  background: transparent;
+  border: 2px solid #00ffcb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #00ffcb;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  transform: translateY(-50%);
+  transition: background 0.2s, color 0.2s;
+}
+
+.arrow-btn:hover {
+  background: #00ffcb;
+  color: #0e1621;
+}
+
+.arrow-btn.prev {
+  left: 20px;
+}
+
+.arrow-btn.next {
+  right: 20px;
+}
+
+/* 📱 Адаптив */
 @media screen and (max-width: 768px) {
-  .student-block {
+  .slide-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+  }
+
+  .student-img {
+    width: 200px;
   }
 
   .student-info {
     text-align: center;
   }
 
-  .student-img {
-    width: 200px;
+  .arrow-btn {
+    top: 95%;
+    left: auto;
+    transform: translateY(-50%);
+  }
+
+  .arrow-btn.prev {
+    left: 30%;
+  }
+
+  .arrow-btn.next {
+    right: 30%;
   }
 }
+

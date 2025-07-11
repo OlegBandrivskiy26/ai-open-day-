@@ -47,7 +47,6 @@ const Sponsors = () => {
                     <div><div className='sponsors__img sponsors__img5'></div></div>
                     <div><div className='sponsors__img sponsors__img6'></div></div>
                     <div><div className='sponsors__img sponsors__img7'></div></div>
-                    <div><div className='sponsors__img sponsors__img8'></div></div>
                     <div><div className='sponsors__img sponsors__img9'></div></div>
                     <div><div className='sponsors__img sponsors__img10'></div></div>
                     <div><div className='sponsors__img sponsors__img11'></div></div>
@@ -73,7 +72,7 @@ const Sponsors = () => {
           rel="noopener noreferrer" 
           className="gradient-button header-btn"
         >
-          Подати заявку Магістрам
+          Подати заяву Магістрам
         </a>
             </div>
         </div>

@@ -2,21 +2,21 @@ import React from 'react';
 import '../styles/career.css';
 
 const careerList = [
-  '🧱 Associate Technical Architect',
-  '🏗️ Technical Architect',
-  '🎯 Solutions Architect',
+  'Associate Technical Architect',
+  'Technical Architect',
+  'Solutions Architect',
 
-  '🔬 AI – Associate R&D Engineer',
-  '🧪 AI – R&D Engineer',
-  '🧠 AI – Expert R&D Engineer',
+  'AI – Associate R&D Engineer',
+  'AI – R&D Engineer',
+  'AI – Expert R&D Engineer',
 
-  '👨‍💻 Associate Technical Lead',
-  '💼 Technical Lead',
-  '📊 Senior Technical Lead',
-  '📐 Engineering Manager',
+  'Associate Technical Lead',
+  'Technical Lead',
+  'Senior Technical Lead',
+  'Engineering Manager',
 
-  '💻 Software Engineer',
-  '🧑‍🔧 Senior Software Engineer'
+  'Software Engineer',
+  'Senior Software Engineer'
 ];
 
 const CareerOpportunitiesMagistr = () => {

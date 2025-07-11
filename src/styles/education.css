@@ -7,6 +7,17 @@
   width: 100vw;
   overflow: hidden;
 }
+.program-section {
+  position: relative;
+  padding: 100px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 55vw;
+  overflow: hidden;
+}
+
 
 .education-carousel {
   position: absolute;
