@@ -1,10 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 import About from "./components/About";
+import AboutMagistr from "./components/AboutMagistr";
 import CareerOpportunities from "./components/CareerOpportunities";
 import CareerOpportunitiesMagistr from "./components/CareerOpportunitiesMagistr";
 import Clubs from "./components/Clubs";
 import EducationProgram from "./components/EducationProgram";
 import EducationProgramMagistr from "./components/EducationProgramMagistr";
+import ProgramMagistr from "./components/ProgramMagistr";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ImagesCarusel from "./components/ImagesCarusel";
@@ -18,7 +20,7 @@ import LeaderTestimonial from "./components/Testimonials";
 import TimeLine from "./components/TimeLine";
 import FullscreenCarousel from "./components/WelcomeScreen";
 import WelcomeScreen from "./components/WelcomeScreen";
-import './styles/app.css';
+import "./styles/app.css";
 
 // ✅ Плавне слайд-шоу
 const AutoSlider = ({ children }) => {
@@ -38,11 +40,10 @@ const AutoSlider = ({ children }) => {
         className="testimonial-inner"
         style={{
           transform: `translateX(-${index * 100}%)`,
-          display: 'flex',
-          transition: 'transform 1s ease-in-out',
-          width: '100%',
-        }}
-      >
+          display: "flex",
+          transition: "transform 1s ease-in-out",
+          width: "100%"
+        }}>
         {children}
       </div>
     </div>
@@ -97,7 +98,7 @@ function App() {
         <>
           {/* 🔁 Альтернативний вигляд сторінки */}
           <EducationProgramMagistr />
-          <About />
+          <AboutMagistr />
 
           <AutoSlider>
             <LeaderTestimonial
@@ -115,7 +116,7 @@ function App() {
               text="Штучний інтелект – це тренд, який за прогнозами світових аналітичних компаній до 2050 року стане звичним явищем у повсякденному житті. Наші випускники отримують ґрунтовні знання, які вміють застосувати на практиці."
             />
           </AutoSlider>
-
+          <ProgramMagistr />
           <Initiatives />
           <InitiativesMagistr />
           {/* <ImagesCarusel /> */}

@@ -39,7 +39,7 @@ const Header = ({ onToggleView, isAlternateView }) => {
           rel="noopener noreferrer" 
           className="gradient-button header-btn"
         >
-          Подати заявку Магістрам
+          Подати заяву Магістрам
         </a>
       </div>
       

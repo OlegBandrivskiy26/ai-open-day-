@@ -54,7 +54,7 @@ const EducationProgram = () => {
           </p>
         </div>
         <div className="education-license">
-          <p className="license-number">223</p>
+          <p className="license-number">75</p>
           <p className="license-label">Ліцензійний обсяг місць</p>
         </div>
       </div>
