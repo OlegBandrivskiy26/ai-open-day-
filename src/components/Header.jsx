@@ -18,9 +18,19 @@ const Header = ({ onToggleView, isAlternateView }) => {
         <Link className="nav-items" to="about" smooth={true} offset={-70} duration={500}>Про нас</Link>
         <Link className="nav-items" to="lecturers" smooth={true} offset={-20} duration={500}>Наші викладачі</Link>
         <Link className="nav-items" to="sponsors" smooth={true} offset={-100} duration={500}>Партнери</Link>
-        <button className="toggle-view-btn" onClick={onToggleView}>
-        {isAlternateView ? 'Бакалаврам' : 'Магістрам'}
-        </button>
+        <button
+              className="toggle-view-btn"
+              onClick={() => {
+                onToggleView();     
+              window.scrollTo({        // скрол на верх сторінки
+                  top: 0,
+                  behavior: 'smooth',
+                });
+              }}
+                >
+            
+              {isAlternateView ? 'Бакалаврам' : 'Магістрам'}
+            </button>
       </div>
 
       {/* Gradient Button (Desktop Only) */}
@@ -58,9 +68,20 @@ const Header = ({ onToggleView, isAlternateView }) => {
           <Link className="nav-items" to="about" smooth={true} offset={-70} duration={500} onClick={toggleMenu}>Про нас</Link>
           <Link className="nav-items" to="lecturers" smooth={true} offset={-20} duration={500} onClick={toggleMenu}>Наші викладачі</Link>
           <Link className="nav-items" to="sponsors" smooth={true} offset={-100} duration={500} onClick={toggleMenu}>Партнери</Link>
-          <button className="toggle-view-btn" onClick={onToggleView}>
-        {isAlternateView ? 'Бакалаврам' : 'Магістрам'}
-        </button>
+          <button
+              className="toggle-view-btn"
+              onClick={() => {
+                onToggleView();     
+                toggleMenu(); 
+              window.scrollTo({        // скрол на верх сторінки
+                  top: 0,
+                  behavior: 'smooth',
+                });
+              }}
+                >
+            
+              {isAlternateView ? 'Бакалаврам' : 'Магістрам'}
+            </button>
         </div>
       )}
     </header>
