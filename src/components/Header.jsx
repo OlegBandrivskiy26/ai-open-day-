@@ -22,7 +22,7 @@ const Header = ({ onToggleView, isAlternateView }) => {
               className="toggle-view-btn"
               onClick={() => {
                 onToggleView();     
-              window.scrollTo({        // скрол на верх сторінки
+              window.scrollTo({
                   top: 0,
                   behavior: 'smooth',
                 });
@@ -73,7 +73,7 @@ const Header = ({ onToggleView, isAlternateView }) => {
               onClick={() => {
                 onToggleView();     
                 toggleMenu(); 
-              window.scrollTo({        // скрол на верх сторінки
+              window.scrollTo({
                   top: 0,
                   behavior: 'smooth',
                 });
