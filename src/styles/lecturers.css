@@ -34,13 +34,14 @@
 }
 
 .lecturer-img {
-  width: 250px;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  order: 1;
+  width: 100%;
+  height: 300px;
+  background-size: cover; /* Обрізає, але красиво заповнює */
+  background-position: center top; /* або змінюй індивідуально */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .lecturer-name span {
   font-size: 16px;
   font-weight: 500;
@@ -53,7 +54,7 @@
   background-image: url(../img/zasoba.jpg);
 }
 .lecturer-img3 {
-  background-image: url(../img/boychuck.JPG);
+  background-image: url(../img/Boychuk.jpg);
 }
 .lecturer-img4 {
   background-image: url(../img/hubch.PNG);
@@ -62,7 +63,7 @@
   background-image: url(../img/shahovska.JPG);
 }
 .lecturer-img6 {
-  background-image: url(../img/Shamuratov.JPG);
+  background-image: url(../img/Shamuratov.jpg);
 }
 .lecturer-img7 {
   background-image: url(../img/pshenuchyy.jpg);
@@ -85,6 +86,81 @@
 }
 .lecturer-img13 {
   background-image: url(../img/Yakovyna.jpg);
+}
+.lecturer-img14 {
+  background-image: url(../img/Boyko.jpg);
+}
+.lecturer-img15 {
+  background-image: url(../img/Izonin.jpg);
+}
+.lecturer-img16 {
+  background-image: url(../img/Tomashevskyi.jpg);
+}
+.lecturer-img17 {
+  background-image: url(../img/Yakyumyshyn.jpg);
+}
+.lecturer-img18 {
+  background-image: url(../img/Barna.jpg);
+}
+.lecturer-img19 {
+  background-image: url(../img/Boychuk.jpg);
+}
+.lecturer-img20 {
+  background-image: url(../img/Khudoba.jpg);
+}
+.lecturer-img21 {
+  background-image: url(../img/Peleshko.jpg);
+}
+.lecturer-img22 {
+  background-image: url(../img/Shvorob.jpg);
+}
+.lecturer-img23 {
+  background-image: url(../img/Kaminskyi.jpg);
+}
+.lecturer-img24 {
+  background-image: url(../img/Mochurad.jpg);
+}
+.lecturer-img25 {
+  background-image: url(../img/Matviychuk.jpg);
+}
+.lecturer-img26 {
+  background-image: url(../img/Basystyuk.jpg);
+}
+.lecturer-img27 {
+  background-image: url(../img/Peleshchyshyn.jpg);
+}
+.lecturer-img28 {
+  background-image: url(../img/Kovalchuk.jpg);
+}
+.lecturer-img29 {
+  background-image: url(../img/Shamuratov.jpg);
+}
+.lecturer-img30 {
+  background-image: url(../img/Vovk.jpg);
+}
+.lecturer-img31 {
+  background-image: url(../img/Horun.jpg);
+}
+.lecturer-img32 {
+  background-image: url(../img/Hasko.jpg);
+}
+.lecturer-img33 {
+  background-image: url(../img/Liaskovska.jpg);
+}
+.lecturer-img34 {
+  background-image: url(../img/Khavalko.jpg);
+}
+.lecturer-img35 {
+  background-image: url(../img/Shymanskyi.jpg);
+}
+.lecturer-img36 {
+  background-image: url(../img/Vykliuk.jpg);
+}
+.lecturer-img37 {
+  background-image: url(../img/Kryvenchuk.jpg);
+}
+.lecturer-img37 {
+  background-image: url(../img/Kosarevych.jpg);
 }
 .lecturer-name {
   order: 2;
