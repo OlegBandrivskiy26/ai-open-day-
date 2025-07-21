@@ -35,7 +35,6 @@ const lecturers = [
   { name: 'Олег Басистюк', title: 'Асистент, Магістр комп’ютерних наук', imgClass: 'lecturer-img26'},
   { name: 'Оксана Пелещишин', title: 'Асистент, Кандидат технічних наук', imgClass: 'lecturer-img27'},
   { name: 'Олександр Ковальчук', title: 'Асистент, Магістр кафедри СШІ', imgClass: 'lecturer-img28'},
-  { name: 'Олексій Шамуратов', title: 'Асистент', imgClass: 'lecturer-img29'},
   { name: 'Олена Вовк', title: 'Заступниця завідувача кафедри, Кандидат технічних наук', imgClass: 'lecturer-img30'},
   { name: 'Павло Горун', title: 'Асистент, Кандидат фізико-математичних наук', imgClass: 'lecturer-img31'},
   { name: 'Роман Гасько', title: 'Старший викладач', imgClass: 'lecturer-img32'},
